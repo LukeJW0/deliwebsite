@@ -131,6 +131,19 @@ a {
     height: 10%;
 }
 
+#navbackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #151515;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  z-index: 0;
+  height: 4.5rem;
+}
+
 #nav {
     position: fixed;
     top: 0;
@@ -140,6 +153,7 @@ a {
     flex-direction: row;
     height: 4.5rem;
     max-width: 500px;
+    z-index: 1;
 }
 
 .navbutton {

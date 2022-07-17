@@ -1,7 +1,8 @@
 html, body {
     background-color: black;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    max-width: 500px;
 }
 
 #picker {
@@ -122,6 +123,19 @@ html, body {
     height: 10%;
 }
 
+#navbackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #151515;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  z-index: 0;
+  height: 4.5rem;
+}
+
 #nav {
     position: fixed;
     top: 0;
@@ -130,6 +144,8 @@ html, body {
     display: flex;
     flex-direction: row;
     height: 4.5rem;
+    max-width: 500px;
+    z-index: 1;
 }
 
 .navbutton {
