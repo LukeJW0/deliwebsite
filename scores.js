@@ -1,5 +1,24 @@
 var picker;
 var scores = [];
+const images = {
+  "Venom" : "https://i.ibb.co/mCwwb5G/venom.png",
+  "Summits" : "https://i.ibb.co/V228qGS/summits.png",
+  "Reapers" : "https://i.ibb.co/FHjNxxS/reapers.png",
+  "Pandas" : "https://i.ibb.co/HDCR9dk/pandas.png",
+  "Nobunaga" : "https://i.ibb.co/F4wDc90/nobunaga.png",
+  "Monarchs" : "https://i.ibb.co/J5Qd0x4/monarchs.png",
+  "Missions" : "https://i.ibb.co/MD7dfty/missions.png",
+  "Grizzlies" : "https://i.ibb.co/gWb7smC/grizzlies.png",
+  "K9s" : "https://i.ibb.co/GRK7bL8/k9s.png",
+  "Fineapples" : "https://i.ibb.co/CmWWX9s/fineapples.png",
+  "Emeralds" : "https://i.ibb.co/dPhgpX7/emeralds.png",
+  "Elks" : "https://i.ibb.co/BymhkDX/elks.png",
+  "Dimes" : "https://i.ibb.co/YL57YbQ/dimes.png",
+  "Devils" : "https://i.ibb.co/WDRjt4T/devils.png",
+  "Cobras" : "https://i.ibb.co/H76BrmF/cobras.png",
+  "Blacktips" : "https://i.ibb.co/Cnh14Wd/blacktips.png",
+  "Blizzards" : "https://i.ibb.co/jGv46Cr/blizzards.png"
+}
 
 $('document').ready(function(){
   picker = $('#teams');
@@ -47,13 +66,13 @@ function loadTeam(team) {
     if (game[0] == team || game[3] == team || team == "All") {
       let newGame = $('#template').clone();
       newGame.children().eq(0).text(game[3]);
-      newGame.children().eq(1).attr("src", "logos/" + game[3].toLowerCase() + ".png");
+      newGame.children().eq(1).attr("src", images.game[3]);
       newGame.children().eq(2).text(game[5]);
       newGame.children().eq(3).text("Week " + (parseInt(game[2].split('-')[0]) + parseInt(game[2].split('-')[1])));
       newGame.children().eq(4).text(game[4] + "-" + game[1]);
       newGame.children().eq(5).text(game[6]);
       newGame.children().eq(6).text(game[0]);
-      newGame.children().eq(7).attr("src", "logos/" + game[0].toLowerCase() + ".png");
+      newGame.children().eq(7).attr("src", images.game[0]);
       newGame.children().eq(8).text(game[2]);
       newGame.removeAttr('id');
       newGame.show();
