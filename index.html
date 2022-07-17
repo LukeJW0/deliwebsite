@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/730d07f7e7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montseratt:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deli Sports</title>
+  </head>
+  <body>
+    <div id="spacer">
+      <h1 id="spacertext">hi</h1>
+    </div>
+    
+    <div id="delisports">
+      <h1 id="delititle">Deli Sports</h1>
+      <h1 id="delidesc">For more detailed information use the <a href="https://docs.google.com/spreadsheets/d/1Al-vbjGQwuTQ2Cu2L_scv-Xw7NmOtIhTeI7YYKRfsyU/edit?usp=sharing">Deli Spreadsheet</a></h1>
+      <img id="igimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"/>
+    </div>
+
+    <div id="standings">
+      <h1 id="standingstitle">Standings</h1>
+      <div class="confstandings">
+        <h1 class="conftitle">American Football Conference</h1>
+        <div class="division">
+          <h1 class="divtitle">Eastern Division</h1>
+          <h1 class="teams" id="afceast">Team 1<br>Team 1<br>Team 1<br>Team 1</h1>
+        </div>
+        <div class="division">
+          <h1 class="divtitle">Western Division</h1>
+          <h1 class="teams" id="afcwest">Team 1<br>Team 1<br>Team 1<br>Team 1</h1>
+        </div>
+      </div>
+      <div class="confstandings">
+        <h1 class="conftitle">Global Football Conference</h1>
+        <div class="division">
+          <h1 class="divtitle">Eastern Division</h1>
+          <h1 class="teams" id="gfceast">Team 1<br>Team 1<br>Team 1<br>Team 1</h1>
+        </div>
+        <div class="division">
+          <h1 class="divtitle">Western Division</h1>
+          <h1 class="teams" id="gfcwest">Team 1<br>Team 1<br>Team 1<br>Team 1</h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="credits">
+      <h1 id="creditstext">This website was created by @delixcastle</h1>
+    </div>
+    
+    <div id="nav">
+      <div class="navbutton" id="rosters" onmousedown="location.href='rosters.html';return false;"><i class="fa-solid fa-user-group navicon"></i>Rosters</div>
+      <div class="navbutton" id="stats" onmousedown="location.href='stats.html';return false;"><i class="fa-solid fa-chart-simple navicon"></i>Stats</div>
+      <div class="navbutton" id="home"><i class="fa-solid fa-house navicon"></i>Home</div>
+      <div class="navbutton" id="scores" onmousedown="location.href='scores.html';return false;"><i class="fa-solid fa-football navicon"></i>Scores</div>
+      <div class="navbutton" id="history"><i class="fa-solid fa-calendar-days navicon"></i>History</div>
+    </div>
+  </body>
+</html>

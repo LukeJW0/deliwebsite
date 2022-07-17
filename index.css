@@ -1,0 +1,175 @@
+html, body {
+    background-color: black;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 500px;
+}
+
+#delisports {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+    width: 90%;
+    margin: 2.5% auto 2.5% auto;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+#delititle {
+    font-family: 'Montseratt', sans-serif;
+    color: #00D39D;
+    font-size: 2.25rem;
+    font-weight: 400;
+    /* font-weight: bolder */
+    text-align: center;
+    margin: 1%;
+}
+
+#delidesc {
+    font-family: 'Montseratt', sans-serif;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+    max-width: 95%;
+    margin: 1%;
+}
+
+a {
+  color: #00D39D;
+}
+
+#igimg {
+    width: 2.5rem;
+    margin: 2%;
+    aspect-ratio: 1;
+}
+
+#standings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+    width: 90%;
+    margin: 2.5% auto 2.5% auto;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+#standingstitle {
+    font-family: 'Montseratt', sans-serif;
+    color: #00D39D;
+    font-size: 2.25rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 1%;
+}
+
+.confstandings {
+    background-color: #1f1f1f;
+    width: 95%;
+    margin: 1.5% auto 1.5% auto;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.conftitle {
+    font-family: 'Montseratt', sans-serif;
+    color: #E1535B;
+    font-size: 1.75rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 1%;
+}
+
+.divtitle {
+    font-family: 'Montseratt', sans-serif;
+    color: #72999b;
+    font-size: 1.65rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 1.5%;
+}
+
+.teams {
+    font-family: 'Montseratt', sans-serif;
+    color: white;
+    font-size: 1.35rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    line-height: 1.3;
+}
+
+#credits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #151515;
+  width: 90%;
+  margin: 2.5% auto 5% auto;
+  padding: 1% 2%;
+  border-radius: 10px;
+}
+
+#creditstext {
+  font-family: 'Montseratt', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: center;
+  max-width: 95%;
+  color: white;
+}
+
+#spacer {
+    background-color: black;
+    height: 10%;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #151515;
+    display: flex;
+    flex-direction: row;
+    height: 4.5rem;
+    max-width: 500px;
+}
+
+.navbutton {
+    flex-basis: 20%;
+    flex-grow: 0;
+    background-color: #151515;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Montseratt', sans-serif;
+    font-weight: 400;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbutton:hover {
+    background-color: #484848;
+}
+
+.navicon {
+    font-size: 1.5rem;
+    flex-basis: 50%;
+    margin-bottom: 4%;
+}
+
+#home {
+    background-color: #555555;
+}

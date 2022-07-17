@@ -1,0 +1,165 @@
+html, body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#picker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+    width: 90%;
+    margin: 2.5% auto 2.5% auto;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+#teams {
+  width: 100%;
+  text-align: center;
+  background-color: #1f1f1f;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.25rem;
+}
+
+#roster {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+    width: 90%;
+    margin: 2.5% auto 2.5% auto;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.player {
+  width: 95%;
+  padding: 2%;
+  margin: 1%;
+  text-align: center;
+  background-color: #1f1f1f;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 60% 20% 20%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    "name overall money"
+    "arch age years";
+}
+
+.name {
+  grid-area: name;
+  font-family: 'Montseratt', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  text-align: left;
+  color: white;
+  margin: 1%;
+  margin-left: 5%;
+}
+
+.arch {
+  grid-area: arch;
+  font-family: 'Montseratt', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  text-align: left;
+  color: #adadad;
+  margin: 1%;
+  margin-left: 5%;
+}
+
+.overall {
+  grid-area: overall;
+  font-family: 'Montseratt', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  margin: 1%;
+}
+
+.age {
+  grid-area: age;
+  font-family: 'Montseratt', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  text-align: center;
+  color: #adadad;
+  margin: 1%;
+}
+
+.money {
+  grid-area: money;
+  font-family: 'Montseratt', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  margin: 1%;
+}
+
+.years {
+  grid-area: years;
+  font-family: 'Montseratt', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  text-align: center;
+  color: #adadad;
+  margin: 1%;
+}
+
+#spacer {
+    background-color: black;
+    height: 10%;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #151515;
+    display: flex;
+    flex-direction: row;
+    height: 4.5rem;
+}
+
+.navbutton {
+    flex-basis: 20%;
+    flex-grow: 0;
+    background-color: #151515;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Montseratt', sans-serif;
+    font-weight: 400;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbutton:hover {
+    background-color: #484848;
+}
+
+.navicon {
+    font-size: 1.5rem;
+    flex-basis: 50%;
+    margin-bottom: 4%;
+}
+
+#rosters {
+    background-color: #555555;
+}

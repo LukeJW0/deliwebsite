@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="" />
+    <link rel="stylesheet" type="text/css" href="rosters.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="rosters.js"></script>
+    <script src="https://kit.fontawesome.com/730d07f7e7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montseratt:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deli Sports</title>
+  </head>
+  <body>
+    <div id="spacer">
+      <h1 id="spacertext">hi</h1>
+    </div>
+    
+    <div id="picker">
+      <select id="teams">
+        <option value="Reapers">Arizona Reapers</option>
+        <option value="Reapers">Boston Blizzards</option>
+        <option value="Reapers">California K9s</option>
+        <option value="Reapers">Cleveland Cobras</option>
+        <option value="Reapers">Delaware Devils</option>
+        <option value="Reapers">Fort Wayne Summits</option>
+        <option value="Reapers">Hawaii Blacktips</option>
+        <option value="Reapers">Japan Nobunaga</option>
+        <option value="Reapers">Kansas City Dimes</option>
+        <option value="Reapers">London Monarchs</option>
+        <option value="Reapers">Pittsburgh Pandas</option>
+        <option value="Reapers">Salt Lake City Elks</option>
+        <option value="Reapers">San Antonio Missions</option>
+        <option value="Reapers">San Diego Venom</option>
+        <option value="Reapers">Seattle Emeralds</option>
+        <option value="Reapers">SoCal Fineapples</option>
+      </select>
+    </div>
+
+    <div id="roster">
+      <div id="template" class="player">
+        <h1 class="name">Luke Castle III</h1>
+        <h1 class="arch">Hybrid LB (ED)</h1>
+        <h1 class="overall">90</h1>
+        <h1 class="age">Age: 24</h1>
+        <h1 class="money">$8M</h1>
+        <h1 class="years">Years: 1</h1>
+      </div>
+    </div>
+    
+    <div id="nav">
+      <div class="navbutton" id="rosters"><i class="fa-solid fa-user-group navicon"></i>Rosters</div>
+      <div class="navbutton" id="stats" onmousedown="location.href='stats.html';return false;"><i class="fa-solid fa-chart-simple navicon"></i>Stats</div>
+      <div class="navbutton" id="home" onmousedown="location.href='index.html';return false;"><i class="fa-solid fa-house navicon"></i>Home</div>
+      <div class="navbutton" id="scores" onmousedown="location.href='scores.html';return false;"><i class="fa-solid fa-football navicon"></i>Scores</div>
+      <div class="navbutton" id="history"><i class="fa-solid fa-calendar-days navicon"></i>History</div>
+    </div>
+  </body>
+</html>

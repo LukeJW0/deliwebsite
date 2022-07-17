@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="" />
+    <link rel="stylesheet" type="text/css" href="stats.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="stats.js"></script>
+    <script src="https://kit.fontawesome.com/730d07f7e7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montseratt:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deli Sports</title>
+  </head>
+  <body>
+    <div id="spacer">
+      <h1 id="spacertext">hi</h1>
+    </div>
+
+    <div id="info">
+      <h1 id="statsinfo">Stats including yards, catches, attempts, etc., are not included because game scripts do not account for every yard, throw, run, etc.</h1>
+    </div>
+
+    <div id="name">
+      <input type="text" id="search" placeholder="Enter player name"></input>
+    </div>
+
+    <div id="searchstats">
+      <h1 id="statstext">1 TD</h1>
+    </div>
+
+    <div id="allstats">
+      <div id="14" class="stat">
+        <h1 class="statname">Passing TDs</h1>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+      </div>
+      <div id="4" class="stat">
+        <h1 class="statname">Passing INTs</h1>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+      </div>
+      <div id="12" class="stat">
+        <h1 class="statname">Rushing TDs</h1>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+      </div>
+      <div id="24" class="stat">
+        <h1 class="statname">Receiving TDs</h1>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+      </div>
+      <div id="0" class="stat">
+        <h1 class="statname">Sacks</h1>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+      </div>
+      <div id="30" class="stat">
+        <h1 class="statname">Forced Fumbles</h1>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+      </div>
+      <div id="32" class="stat">
+        <h1 class="statname">Fumble Recoveries</h1>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+      </div>
+      <div id="2" class="stat">
+        <h1 class="statname">Interceptions</h1>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+        <div class="player">
+          <h1 class="playername">N/A</h1>
+          <h1 class="number">00</h1>
+        </div>
+      </div>
+    </div>
+    
+    <div id="nav">
+      <div class="navbutton" id="rosters" onmousedown="location.href='rosters.html';return false;"><i class="fa-solid fa-user-group navicon"></i>Rosters</div>
+      <div class="navbutton" id="stats"><i class="fa-solid fa-chart-simple navicon"></i>Stats</div>
+      <div class="navbutton" id="home" onmousedown="location.href='index.html';return false;"><i class="fa-solid fa-house navicon"></i>Home</div>
+      <div class="navbutton" id="scores" onmousedown="location.href='scores.html';return false;"><i class="fa-solid fa-football navicon"></i>Scores</div>
+      <div class="navbutton" id="history"><i class="fa-solid fa-calendar-days navicon"></i>History</div>
+    </div>
+  </body>
+</html>

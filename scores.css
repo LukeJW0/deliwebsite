@@ -1,0 +1,206 @@
+html, body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#picker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+    width: 90%;
+    margin: 2.5% auto 2.5% auto;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+#teams {
+  width: 100%;
+  text-align: center;
+  background-color: #1f1f1f;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.25rem;
+}
+
+#games {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+    width: 90%;
+    margin: 2.5% auto 2.5% auto;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.game {
+  width: 95%;
+  padding: 2%;
+  margin: 1%;
+  text-align: center;
+  background-color: #1f1f1f;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 33.3% 33.4% 33.3%;
+  grid-template-rows: 20% 10% 40% 10% 20%;
+  grid-template-areas:
+    "awayname week homename"
+    "awaylogo week homelogo"
+    "awaylogo score homelogo"
+    "awaylogo potg homelogo"
+    "awayrecord potg homerecord";
+}
+
+.awayname {
+  grid-area: awayname;
+  font-family: 'Montseratt', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  text-align: center;
+  color: #adadad;
+  margin: 1%;
+  align-self: center;
+  justify-self: center;
+}
+
+.homename {
+  grid-area: homename;
+  font-family: 'Montseratt', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  text-align: center;
+  color: #adadad;
+  margin: 1%;
+  align-self: center;
+  justify-self: center;
+}
+
+.awaylogo {
+  grid-area: awaylogo;
+  width: 4.5rem;
+  padding: 5%;
+  align-self: center;
+  justify-self: center;
+}
+
+.homelogo {
+  grid-area: homelogo;
+  width: 4.5rem;
+  padding: 5%;
+  align-self: center;
+  justify-self: center;
+}
+
+.awayrecord {
+  grid-area: awayrecord;
+  font-family: 'Montseratt', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  text-align: center;
+  color: #adadad;
+  margin: 1%;
+  align-self: center;
+  justify-self: center;
+}
+
+.homerecord {
+  grid-area: homerecord;
+  font-family: 'Montseratt', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  text-align: center;
+  color: #adadad;
+  margin: 1%;
+  align-self: center;
+  justify-self: center;
+}
+
+.week {
+  grid-area: week;
+  font-family: 'Montseratt', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  color: #adadad;
+  margin: 1%;
+  align-self: center;
+  justify-self: center;
+}
+
+.score {
+  grid-area: score;
+  font-family: 'Montseratt', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin: 1%;
+  align-self: center;
+  justify-self: center;
+}
+
+.potg {
+  grid-area: potg;
+  font-family: 'Montseratt', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-align: center;
+  color: #adadad;
+  margin: 1%;
+  align-self: center;
+  justify-self: center;
+}
+
+#spacer {
+    background-color: black;
+    height: 10%;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #151515;
+    display: flex;
+    flex-direction: row;
+    height: 4.5rem;
+}
+
+.navbutton {
+    flex-basis: 20%;
+    flex-grow: 0;
+    background-color: #151515;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Montseratt', sans-serif;
+    font-weight: 400;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbutton:hover {
+    background-color: #484848;
+}
+
+.navicon {
+    font-size: 1.5rem;
+    flex-basis: 50%;
+    margin-bottom: 4%;
+}
+
+#scores {
+    background-color: #555555;
+}
