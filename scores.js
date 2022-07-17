@@ -10,7 +10,7 @@ const images = {
   "Missions" : "https://iili.io/wOGzqQ.png",
   "Grizzlies" : "https://iili.io/wOGTrB.png",
   "K9s" : "https://iili.io/wOGI1V.png",
-  "Fineapples" : "https://iili.io/wOGAdP.png",
+  "Fineapples" : "https://iili.io/weLFwX.png",
   "Emeralds" : "https://iili.io/wOGR71.png",
   "Elks" : "https://iili.io/wOG5kF.png",
   "Dimes" : "https://iili.io/wOG7mg.png",
