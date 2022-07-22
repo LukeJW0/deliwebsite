@@ -75,6 +75,9 @@ function loadTeam(i) {
     newPlayer.children().eq(3).text("Age: " + player[3]);
     newPlayer.children().eq(4).text("$" + player[8] + "M");
     newPlayer.children().eq(5).text("Years: " + player[7]);
+    let n = player[2].indexOf(' ');
+    let s = player[2].substring(0, n != -1 ? n : player[2].length);
+    newPlayer.children().eq(6).text(s);
     newPlayer.removeAttr('id');
     newPlayer.show();
     $('#roster').append(newPlayer);

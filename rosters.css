@@ -33,15 +33,16 @@ html, body {
     justify-content: center;
     align-items: center;
     background-color: #151515;
-    width: 90%;
+    width: 95%;
     margin: 2.5% auto 2.5% auto;
-    padding: 2%;
+    padding: 2% 0;
     border-radius: 10px;
 }
 
 .player {
-  width: 95%;
+  width: 92.5%;
   padding: 2%;
+/*   padding-left: 0; */
   margin: 1%;
   text-align: center;
   background-color: #1f1f1f;
@@ -49,39 +50,45 @@ html, body {
   color: white;
   border-radius: 10px;
   display: grid;
-  grid-template-columns: 60% 20% 20%;
+  grid-template-columns: 12% 48% 20% 20%;
   grid-template-rows: 50% 50%;
   grid-template-areas:
-    "name overall money"
-    "arch age years";
+    "pos name overall money"
+    "pos arch age years";
 }
 
 .name {
   grid-area: name;
   font-family: 'Montseratt', sans-serif;
-  font-size: 1.05rem;
+  font-size: 1.03rem;
   font-weight: 400;
   text-align: left;
   color: white;
   margin: 1%;
-  margin-left: 5%;
+  margin-left: 6%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .arch {
   grid-area: arch;
   font-family: 'Montseratt', sans-serif;
-  font-size: 1.05rem;
+  font-size: 0.96rem;
   font-weight: 400;
   text-align: left;
   color: #adadad;
   margin: 1%;
-  margin-left: 5%;
+  margin-left: 6%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .overall {
   grid-area: overall;
   font-family: 'Montseratt', sans-serif;
-  font-size: 1.05rem;
+  font-size: 1.03rem;
   font-weight: 400;
   text-align: center;
   color: white;
@@ -91,7 +98,7 @@ html, body {
 .age {
   grid-area: age;
   font-family: 'Montseratt', sans-serif;
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   font-weight: 400;
   text-align: center;
   color: #adadad;
@@ -101,7 +108,7 @@ html, body {
 .money {
   grid-area: money;
   font-family: 'Montseratt', sans-serif;
-  font-size: 1.05rem;
+  font-size: 1.03rem;
   font-weight: 400;
   text-align: center;
   color: white;
@@ -111,11 +118,30 @@ html, body {
 .years {
   grid-area: years;
   font-family: 'Montseratt', sans-serif;
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   font-weight: 400;
   text-align: center;
   color: #adadad;
   margin: 1%;
+}
+
+.pos {
+  grid-area: pos;
+  font-family: 'Montseratt', sans-serif;
+  font-size: 1.03rem;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  margin: auto auto;
+  height: 0;
+  padding: 50% 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(116, 116, 116, 0.35);
+  border-radius: 50%;
+/*   border-right: 1px solid #6e6e6e; */
 }
 
 #spacer {
