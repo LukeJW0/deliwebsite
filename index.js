@@ -16,15 +16,15 @@ $('document').ready(function(){
                 }
                 if (team[0] == "AFC") {
                     if (team[1] == "East") {
-                        afc += team[2] + " - " + team[3] + "-" + team[4] + "<br>";
+                        afc += team[2] + " (" + team[3] + "-" + team[4] + ")" + "<br>";
                     } else {
-                        afcWest += team[2] + " - " + team[3] + "-" + team[4] + "<br>";
+                        afcWest += team[2] + " (" + team[3] + "-" + team[4] + ")" + "<br>";
                     }
                 } else {
                     if (team[1] == "East") {
-                        gfc += team[2] + " - " + team[3] + "-" + team[4] + "<br>";
+                        gfc += team[2] + " (" + team[3] + "-" + team[4] + ")" + "<br>";
                     } else {
-                        gfcWest += team[2] + " - " + team[3] + "-" + team[4] + "<br>";
+                        gfcWest += team[2] + " (" + team[3] + "-" + team[4] + ")" + "<br>";
                     }
                 }
             }
