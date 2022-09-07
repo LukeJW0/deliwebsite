@@ -5,7 +5,7 @@ var autoStats = [];
 $('document').ready(function(){
   $('#searchstats').hide();
   search = $('#search');
-  getStats("https://sheets.googleapis.com/v4/spreadsheets/1Al-vbjGQwuTQ2Cu2L_scv-Xw7NmOtIhTeI7YYKRfsyU/values/Stats!A1:A1?key=AIzaSyCyE0J97OKvHRbhWatfQQ9YI6HlR-Z8qDg");
+  getStats("https://sheets.googleapis.com/v4/spreadsheets/1EjPw3JVbIueGp84ePMQxd2bUrsIxFFKFAEB_MvxxfCQ/values/Stats!A1:A1?key=AIzaSyCyE0J97OKvHRbhWatfQQ9YI6HlR-Z8qDg");
   
   
   search.on('input', function(){

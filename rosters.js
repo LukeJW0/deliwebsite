@@ -11,7 +11,7 @@ $('document').ready(function(){
   // let team = picker.children().eq(0).text().replace(" ", "%20");
   // alert(team);
   // alert("https://sheets.googleapis.com/v4/spreadsheets/1Al-vbjGQwuTQ2Cu2L_scv-Xw7NmOtIhTeI7YYKRfsyU/values/" + team + "!A2:I50?key=AIzaSyCyE0J97OKvHRbhWatfQQ9YI6HlR-Z8qDg");
-  getTeam("https://sheets.googleapis.com/v4/spreadsheets/1Al-vbjGQwuTQ2Cu2L_scv-Xw7NmOtIhTeI7YYKRfsyU/values/" + picker.children().eq(0).text().replace(/\ /g, "%20") + "!A2:I50?key=AIzaSyCyE0J97OKvHRbhWatfQQ9YI6HlR-Z8qDg");
+  getTeam("https://sheets.googleapis.com/v4/spreadsheets/1EjPw3JVbIueGp84ePMQxd2bUrsIxFFKFAEB_MvxxfCQ/values/" + picker.children().eq(0).text().replace(/\ /g, "%20") + "!A2:I50?key=AIzaSyCyE0J97OKvHRbhWatfQQ9YI6HlR-Z8qDg");
 
   picker.on('change', function(){
     // alert(picker.find(":selected").index());
@@ -20,7 +20,7 @@ $('document').ready(function(){
     if (loadedTeams.includes(picker.children().eq(index).text())) {
       loadTeam(index);
     } else {
-      getTeam("https://sheets.googleapis.com/v4/spreadsheets/1Al-vbjGQwuTQ2Cu2L_scv-Xw7NmOtIhTeI7YYKRfsyU/values/" + picker.children().eq(index).text().replace(/\ /g, "%20") + "!A2:I50?key=AIzaSyCyE0J97OKvHRbhWatfQQ9YI6HlR-Z8qDg");
+      getTeam("https://sheets.googleapis.com/v4/spreadsheets/1EjPw3JVbIueGp84ePMQxd2bUrsIxFFKFAEB_MvxxfCQ/values/" + picker.children().eq(index).text().replace(/\ /g, "%20") + "!A2:I50?key=AIzaSyCyE0J97OKvHRbhWatfQQ9YI6HlR-Z8qDg");
     }
   });
 

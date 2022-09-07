@@ -15,7 +15,7 @@ const images = {
   "Elks" : "https://iili.io/wOG5kF.png",
   "Dimes" : "https://iili.io/wOG7mg.png",
   "Devils" : "https://iili.io/wOGaIa.png",
-  "Cobras" : "https://iili.io/wOGchJ.png",
+  "Cobras" : "https://iili.io/6gzSCN.png",
   "Blacktips" : "https://iili.io/wOG1BR.png",
   "Blizzards" : "https://iili.io/wOGlLv.png"
 }
@@ -24,7 +24,7 @@ $('document').ready(function(){
   picker = $('#teams');
   picker.prop('disabled', true);
   $('#template').hide();
-  getScores("https://sheets.googleapis.com/v4/spreadsheets/1Al-vbjGQwuTQ2Cu2L_scv-Xw7NmOtIhTeI7YYKRfsyU/values/Schedule!A2:G110?key=AIzaSyCyE0J97OKvHRbhWatfQQ9YI6HlR-Z8qDg");
+  getScores("https://sheets.googleapis.com/v4/spreadsheets/1EjPw3JVbIueGp84ePMQxd2bUrsIxFFKFAEB_MvxxfCQ/values/Schedule!A2:G110?key=AIzaSyCyE0J97OKvHRbhWatfQQ9YI6HlR-Z8qDg");
 
   picker.on('change', function(){
     // alert(picker.find(":selected").index());

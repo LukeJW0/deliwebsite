@@ -1,6 +1,6 @@
 $('document').ready(function(){
     $.ajax({
-        url: "https://sheets.googleapis.com/v4/spreadsheets/1Al-vbjGQwuTQ2Cu2L_scv-Xw7NmOtIhTeI7YYKRfsyU/values/Standings!A3:E22?key=AIzaSyCyE0J97OKvHRbhWatfQQ9YI6HlR-Z8qDg",
+        url: "https://sheets.googleapis.com/v4/spreadsheets/1EjPw3JVbIueGp84ePMQxd2bUrsIxFFKFAEB_MvxxfCQ/values/Standings!A3:E22?key=AIzaSyCyE0J97OKvHRbhWatfQQ9YI6HlR-Z8qDg",
         type: 'GET',
         success: function(response) {
             console.log(response.values);
@@ -41,7 +41,7 @@ $('document').ready(function(){
     });
 
   $.ajax({
-        url: "https://sheets.googleapis.com/v4/spreadsheets/1Al-vbjGQwuTQ2Cu2L_scv-Xw7NmOtIhTeI7YYKRfsyU/values/Standings!H9:H15?key=AIzaSyCyE0J97OKvHRbhWatfQQ9YI6HlR-Z8qDg",
+        url: "https://sheets.googleapis.com/v4/spreadsheets/1EjPw3JVbIueGp84ePMQxd2bUrsIxFFKFAEB_MvxxfCQ/values/Standings!H9:H15?key=AIzaSyCyE0J97OKvHRbhWatfQQ9YI6HlR-Z8qDg",
         type: 'GET',
         success: function(response) {
             console.log(response.values);
