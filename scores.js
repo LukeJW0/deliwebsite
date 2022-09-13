@@ -17,7 +17,8 @@ const images = {
   "Devils" : "https://iili.io/wOGaIa.png",
   "Cobras" : "https://iili.io/6gzSCN.png",
   "Blacktips" : "https://iili.io/wOG1BR.png",
-  "Blizzards" : "https://iili.io/wOGlLv.png"
+  "Blizzards" : "https://iili.io/wOGlLv.png",
+  "Tridents" : "https://iili.io/wOG7mg.png"
 }
 
 $('document').ready(function(){
