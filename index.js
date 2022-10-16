@@ -7,33 +7,33 @@ $('document').ready(function(){
             var data = response.values;
             var afc = "";
             var gfc = "";
-            var afcWest = "";
-            var gfcWest = "";
+            var afcSouth = "";
+            var gfcSouth = "";
             for (const team of data) {
                 console.log(team)
                 if (team[2] == "") {
                     continue;
                 }
                 if (team[0] == "AFC") {
-                    if (team[1] == "East") {
+                    if (team[1] == "North") {
                         afc += team[2] + " (" + team[3] + "-" + team[4] + ")" + "<br>";
                     } else {
-                        afcWest += team[2] + " (" + team[3] + "-" + team[4] + ")" + "<br>";
+                        afcSouth += team[2] + " (" + team[3] + "-" + team[4] + ")" + "<br>";
                     }
                 } else {
-                    if (team[1] == "East") {
+                    if (team[1] == "North") {
                         gfc += team[2] + " (" + team[3] + "-" + team[4] + ")" + "<br>";
                     } else {
-                        gfcWest += team[2] + " (" + team[3] + "-" + team[4] + ")" + "<br>";
+                        gfcSouth += team[2] + " (" + team[3] + "-" + team[4] + ")" + "<br>";
                     }
                 }
             }
             
             console.log('tes');
-            $('#afceast').html(afc.substring(0, afc.length - 4));
-            $('#gfceast').html(gfc.substring(0, gfc.length - 4));
-            $('#afcwest').html(afcWest.substring(0, afcWest.length - 4));
-            $('#gfcwest').html(gfcWest.substring(0, gfcWest.length - 4));
+            $('#afcnorth').html(afc.substring(0, afc.length - 4));
+            $('#gfcnorth').html(gfc.substring(0, gfc.length - 4));
+            $('#afcsouth').html(afcSouth.substring(0, afcSouth.length - 4));
+            $('#gfcsouth').html(gfcSouth.substring(0, gfcSouth.length - 4));
         },
         error: function(error) {
             console.log(error);
