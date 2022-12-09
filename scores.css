@@ -50,13 +50,14 @@ html, body {
   border-radius: 10px;
   display: grid;
   grid-template-columns: 33.3% 33.4% 33.3%;
-  grid-template-rows: 20% 10% 40% 10% 20%;
+  grid-template-rows: 19% 9% 34% 9% 19% 10%;
   grid-template-areas:
     "awayname week homename"
     "awaylogo week homelogo"
     "awaylogo score homelogo"
     "awaylogo potg homelogo"
-    "awayrecord potg homerecord";
+    "awayrecord potg homerecord"
+    "showscript showscript showscript";
 }
 
 .awayname {
@@ -157,6 +158,46 @@ html, body {
   margin: 1%;
   align-self: center;
   justify-self: center;
+}
+
+.showscript {
+  grid-area: showscript;
+  font-family: 'Montseratt', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-align: center;
+  color: #8c8c8c;
+  margin: 1%;
+  align-self: center;
+  justify-self: center;
+  pointer-events: all;
+}
+
+.showscript:hover {
+  color: white;
+}
+
+.script {
+  width: 95%;
+  padding: 2%;
+  margin: 1%;
+  text-align: center;
+  background-color: #1f1f1f;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.scripttext {
+  font-family: 'Montseratt', sans-serif;
+  font-size: 1.0rem;
+  font-weight: 400;
+  text-align: left;
+  color: #adadad;
+  margin: 1%;
+  line-height: 1.25;
 }
 
 #spacer {

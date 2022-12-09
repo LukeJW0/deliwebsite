@@ -1,6 +1,6 @@
 var picker;
 var scores = [];
-const images = {
+var images = {
   "Venom" : "https://iili.io/wOGK79.png",
   "Summits" : "https://iili.io/wOGCzb.png",
   "Reapers" : "https://iili.io/wOGqmu.png",
@@ -20,12 +20,32 @@ const images = {
   "Blizzards" : "https://iili.io/wOGlLv.png",
   "Tridents" : "https://iili.io/wOG7mg.png"
 }
+var scriptTemplate;
+const scripts = [];
 
 $('document').ready(function(){
   picker = $('#teams');
   picker.prop('disabled', true);
+  scriptTemplate = $('#scripttemplate');
   $('#template').hide();
-  getScores("https://sheets.googleapis.com/v4/spreadsheets/1EjPw3JVbIueGp84ePMQxd2bUrsIxFFKFAEB_MvxxfCQ/values/Schedule!A2:G110?key=AIzaSyCyE0J97OKvHRbhWatfQQ9YI6HlR-Z8qDg");
+  $('#scripttemplate').hide();
+
+  $.ajax({
+    url: "https://sheets.googleapis.com/v4/spreadsheets/1EjPw3JVbIueGp84ePMQxd2bUrsIxFFKFAEB_MvxxfCQ/values/Team%20Stuff!E1:G?key=AIzaSyCyE0J97OKvHRbhWatfQQ9YI6HlR-Z8qDg",
+    type: 'GET',
+    success: function(response) {
+      // console.log(response.values);
+      let data = response.values;
+      for (let team of data) {
+        picker.append($('<option value="' + team[1] + '">' + team[0] + " " + team[1] + '</option>'));
+        // images[team[1]] = 
+      }
+      getScores("https://sheets.googleapis.com/v4/spreadsheets/1EjPw3JVbIueGp84ePMQxd2bUrsIxFFKFAEB_MvxxfCQ/values/Schedule!A2:H?key=AIzaSyCyE0J97OKvHRbhWatfQQ9YI6HlR-Z8qDg");
+    },
+    error: function(error) {
+      console.log(error);
+    }
+  });
 
   picker.on('change', function(){
     // alert(picker.find(":selected").index());
@@ -34,6 +54,24 @@ $('document').ready(function(){
 
   $('#history').on('mousedown', function(){
     alert('The History page is not ready yet!');
+  });
+
+  $('#games').on('click', '.showscript', function() {
+    if ($(this).text() === "Hide Script") {
+      $(this).text('Show Script');
+      $('.script').remove();
+      return;
+    }
+    $('.showscript').text('Show Script');
+    $('.script').remove();
+    
+    let thisScore = $(this).parent();
+    let newScript = scriptTemplate.clone();
+    newScript.removeAttr('id');
+    newScript.children().eq(0).html(thisScore.attr('data-script').replace(/\n/g,"<br>"));
+    newScript.show();
+    thisScore.after(newScript);
+    $(this).text('Hide Script');
   });
 });
 
@@ -76,6 +114,7 @@ function loadTeam(team) {
       newGame.children().eq(7).attr("src", images[game[0]]);
       newGame.children().eq(8).text(game[2]);
       newGame.removeAttr('id');
+      newGame.attr('data-script', game[7]);
       newGame.show();
       $('#games').prepend(newGame);
     }
