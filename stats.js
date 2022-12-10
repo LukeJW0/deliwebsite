@@ -36,7 +36,7 @@ function getStats(url) {
 }
 
 function loadStats() {
-  var statIndex = [14, 4, 12, 24, 0, 30, 32, 2]
+  var statIndex = [18, 10, 14, 4, 6, 8, 12, 20, 22, 24, 28, 0, 30, 32, 2]
   for (const index of statIndex) {
     for (let i = 0; i < 5; i++) {
       $('#' + index).children().eq(i + 1).children().eq(0).text(stats[index][i]);

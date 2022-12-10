@@ -54,7 +54,7 @@ html, body {
   align-items: center;
   background-color: #151515;
   width: 90%;
-  margin: 2.5% auto 2.5% auto;
+  margin: 2.5% auto 0 auto;
   padding: 2%;
   border-radius: 10px;
 }
@@ -76,7 +76,7 @@ html, body {
     align-items: center;
     background-color: black;
     width: 90%;
-    margin: 2.5% auto 2.5% auto;
+    margin: 0 auto 2.5% auto;
     padding: 2%;
     border-radius: 10px;
 }

@@ -27,7 +27,7 @@ html, body {
     margin: 1%;
 }
 
-#delidesc {
+.delidesc {
     font-family: 'Montseratt', sans-serif;
     color: white;
     font-size: 1.4rem;
