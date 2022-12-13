@@ -11,7 +11,7 @@ $('document').ready(function(){
   // let teams = [];
   // if (storage.getItem("season"))
   $.ajax({
-    url: "https://sheets.googleapis.com/v4/spreadsheets/1EjPw3JVbIueGp84ePMQxd2bUrsIxFFKFAEB_MvxxfCQ/values/Team%20Stuff!E1:F?key=AIzaSyCyE0J97OKvHRbhWatfQQ9YI6HlR-Z8qDg",
+    url: "https://sheets.googleapis.com/v4/spreadsheets/1EjPw3JVbIueGp84ePMQxd2bUrsIxFFKFAEB_MvxxfCQ/values/Team%20Data!E1:F?key=AIzaSyCyE0J97OKvHRbhWatfQQ9YI6HlR-Z8qDg",
     type: 'GET',
     success: function(response) {
       // console.log(response.values);
@@ -82,7 +82,7 @@ function loadTeam(i) {
     if (player.length < 2) {
       continue;
     }
-    if (player[4] == "Coach") {
+    if (player[4] == "Coach" || player[4] == "") {
       continue;
     }
     let newPlayer = $('#template').clone();
