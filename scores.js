@@ -31,7 +31,7 @@ $('document').ready(function(){
   $('#scripttemplate').hide();
 
   $.ajax({
-    url: "https://sheets.googleapis.com/v4/spreadsheets/1EjPw3JVbIueGp84ePMQxd2bUrsIxFFKFAEB_MvxxfCQ/values/Team%20Stuff!E1:G?key=AIzaSyCyE0J97OKvHRbhWatfQQ9YI6HlR-Z8qDg",
+    url: "https://sheets.googleapis.com/v4/spreadsheets/1EjPw3JVbIueGp84ePMQxd2bUrsIxFFKFAEB_MvxxfCQ/values/Team%20Data!E1:G?key=AIzaSyCyE0J97OKvHRbhWatfQQ9YI6HlR-Z8qDg",
     type: 'GET',
     success: function(response) {
       // console.log(response.values);
