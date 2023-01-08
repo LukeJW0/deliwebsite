@@ -84,6 +84,7 @@ html, body {
 .stat {
   width: 95%;
   padding: 5%;
+  padding-bottom: 2.5%;
   margin: 1%;
   text-align: center;
   background-color: #111111;
@@ -200,4 +201,19 @@ html, body {
 
 #stats {
     background-color: #555555;
+}
+
+.showall {
+  font-family: 'Montseratt', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  color: #8c8c8c;
+  margin: 3%;
+  justify-self: center;
+  pointer-events: all;
+}
+
+.showall:hover {
+  color: white;
 }

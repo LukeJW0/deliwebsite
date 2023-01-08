@@ -16,6 +16,33 @@ $('document').ready(function(){
   $('#history').on('mousedown', function(){
     alert('The History page is not ready yet!');
   });
+
+  $('#allstats').on('click', '.showall', function() {
+    if ($(this).text() === "Hide All") {
+      $(this).text('Show All');
+      $(this).parent().children().not('.original').remove();
+      return;
+    }
+    // $('.showscript').text('Show Script');
+    // $('.script').remove();
+    let stat = $(this).parent();
+    let statIndex = parseInt($(this).parent().attr('id'));
+
+    let button = $(this).clone();
+    $(this).remove();
+    
+    for (let i = 5; i < stats[statIndex].length; i++) {
+      let newPlayer = $('#playertemplate').clone();
+      // alert(newPlayer.attr('id'))
+      newPlayer.removeAttr('id');
+      newPlayer.removeClass('original');
+      newPlayer.children().eq(0).text(stats[statIndex][i]);
+      newPlayer.children().eq(1).text(stats[statIndex + 1][i]);
+      stat.append(newPlayer);
+    }
+    stat.append(button);
+    button.text('Hide All');
+  });
 });
 
 function getStats(url) {
@@ -36,7 +63,7 @@ function getStats(url) {
 }
 
 function loadStats() {
-  var statIndex = [18, 10, 14, 4, 6, 8, 12, 20, 22, 24, 28, 0, 30, 32, 2]
+  var statIndex = [16, 18, 10, 14, 4, 6, 8, 12, 20, 22, 24, 28, 0, 30, 32, 26, 2]
   for (const index of statIndex) {
     for (let i = 0; i < 5; i++) {
       $('#' + index).children().eq(i + 1).children().eq(0).text(stats[index][i]);
@@ -46,12 +73,13 @@ function loadStats() {
 }
 
 function searchStats(name) {
-  var statNames = ["Sack(s)", "Sacks", "INT(s)", "INTs", "INT(s) Thrown", "INTs Thrown", "Rush TD(s)", "Rush TDs", "Pass TD(s)", "Pass TDs", "Rec TD(s)", "Rec TDs", "FF(s)", "FFs", "FR(s)", "FRs"];
+  console.log(stats);
+  var statNames = ["Sacks", "Sacks", "INTs", "INTs", "INTs Thrown", "INTs Thrown", "Carries", "Carries", "Rush Yards", "Rush Yards", "Pass Yards", "Pass Yards", "Rush TDs", "Rush TDs", "Pass TDs", "Pass TDs", "Attempts", "Attempts", "Completions", "Completions", "Receptions", "Receptions", "Rec Yards", "Rec Yards", "Rec TDs", "Rec TDs", "Pass Defs", "Pass Defs", "TFLs", "TFLs", "FFs", "FFs", "FRs", "FRs"];
 
-  for (let i = 0; i < autoStats.length; i+=2) {
-    for (let j = 0; j < autoStats[i].length; j++) {
-      if (autoStats[i][j] === name) {
-        $('#statstext').text($('#statstext').text() + autoStats[i + 1][j] + " " + statNames[i + 1] + ", ");
+  for (let i = 0; i < stats.length; i+=2) {
+    for (let j = 0; j < stats[i].length; j++) {
+      if (stats[i][j] === name) {
+        $('#statstext').text($('#statstext').text() + stats[i + 1][j] + " " + statNames[i + 1] + ", ");
         $('#searchstats').show();
       }
     }
